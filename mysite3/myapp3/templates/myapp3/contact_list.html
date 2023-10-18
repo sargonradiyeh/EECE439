@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="icon" href="{% static 'images/favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <meta charset="UTF-8">
+ <title>Contact List</title>
+ <center><h1><div class="white-box">Library</div></h1></center>
+ <center><h2><div class="white-box2">Catalog</div></h2></center>
+</head>
+<div class="sidenav">
+    <a href="../">Home</a>
+    <a href="../createcontact">Submit a Contact</a>
+</div> 
+<body>
+<br><center><div class="white-box2">
+    <ul>
+        {% for contact in contacts %}
+        <li>
+            <strong>{{ contact.telnumber }} for {{ contact.name }}</strong>
+            <div class="button-container">
+                <form method="post" action="{% url 'delete_contact' contact.pk %}">
+                    {% csrf_token %}
+                    <button type="submit" class="delete-button">Delete</button>
+                </form>
+                <a href="{% url 'update_contact' contact.pk %}" class="button">Edit</a>
+            </div>
+        </li>
+        {% empty %}
+           <center><p>No contacts available.</p></center> 
+        {% endfor %}
+    </ul>
+</div></center>
+</body>
+</html>

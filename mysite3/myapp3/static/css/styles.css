@@ -1,0 +1,151 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    /* Additional CSS properties to style your background image */
+}
+.white-box {
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing inside the box */
+    border: 1px solid #ccc; /* Add a border for a clear visual separation */
+    border-radius: 5px; /* Add rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    width: 200px;}
+
+.white-box2 {
+        background-color: #fff; /* Set background color to white */
+        padding: 20px; /* Add padding for spacing inside the box */
+        border: 1px solid #ccc; /* Add a border for a clear visual separation */
+        border-radius: 5px; /* Add rounded corners for a modern look */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        width: 360px;}
+
+.white-box3 {
+        background-color: #fff; /* Set background color to white */
+        padding: 20px; /* Add padding for spacing inside the box */
+        border: 1px solid #ccc; /* Add a border for a clear visual separation */
+        border-radius: 5px; /* Add rounded corners for a modern look */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+        width: 400px;}
+
+.button {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: #000000; /* Button background color */
+        color: #fff; /* Button text color */
+        text-decoration: none; /* Remove underlines from links */
+        border: none;
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+
+    .button:hover {
+        background-color: #1f2224; /* Button background color on hover */
+    }
+
+.button-container {
+    display: flex; /* Display child elements in a flex container */
+    align-items: center; /* Vertically center buttons within the container */
+    justify-content: center; /* Horizontally center buttons within the container */
+}
+
+/* Styles for the "Delete" button */
+.delete-button {
+    background-color: #ff0000; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    margin-right: 10px; /* Add spacing between buttons */
+    padding: 5px 10px; /* Explicit padding to control button size */
+    font-size: 14px; /* Explicit font size for the button text */
+}
+
+/* Styles for the "Edit" button */
+.button {
+    background-color: #000000; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    padding: 5px 10px; /* Explicit padding to control button size */
+    font-size: 14px; /* Explicit font size for the button text */
+    
+}
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 14%;
+  left: 10px;
+  background: #ffffff;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: 1px solid #ccc; /* Add a border for a clear visual separation */
+  border-radius: 5px; /* Add rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.centernav {
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 38%;
+    left: 40%;
+    background: #ffffff;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border: 1px solid #ccc; /* Add a border for a clear visual separation */
+    border-radius: 5px; /* Add rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+.centernav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+  }
+  
+.centernav a:hover {
+    color: #064579;
+  }
+  
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+@media screen and (max-height: 450px) {
+    .centernav {padding-top: 15px;}
+    .centernav a {font-size: 18px;}
+  }

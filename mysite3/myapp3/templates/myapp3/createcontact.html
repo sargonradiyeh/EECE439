@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="icon" href="{% static 'images/favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <meta charset="UTF-8">
+ <title>Create</title>
+ <center><h1><div class="white-box">Contact List</div></h1></center>
+ <center><h2><div class="white-box2">Submit or Modify Contacts</div></h2></center>
+</head>
+<div class="sidenav">
+    <a href="../">Home</a>
+    <a href="../contacts">Check Catalog</a>
+</div> 
+<body>
+<br><center><div class="white-box">
+<form method="post">
+ {% csrf_token %}
+ {{ form.as_p }}
+ <input type="submit" value="Submit"/>
+</form>
+</div></center>
+</body>
+</html>

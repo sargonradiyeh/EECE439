@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="icon" href="{% static 'images/favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <meta charset="UTF-8">
+ <title>Create</title>
+ <center><h1><div class="white-box">Contact List</div></h1></center>
+ <center><h2><div class="white-box2">Delete Contacts from the Collection</div></h2></center>
+</head>
+<div class="sidenav">
+    <a href="../../..">Home</a>
+    <a href="../../../createcontact">Submit a Contact</a>
+</div> 
+<body>
+<br><center><div class="white-box">
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="button">Delete</button>
+        <a href="{% url 'contact_list' %}" class="button">Cancel</a>
+    </form>
+</div></center>
+</body>
+</html>

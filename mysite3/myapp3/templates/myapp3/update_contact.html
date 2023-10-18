@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<link rel="icon" href="{% static 'images/favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+ <meta charset="UTF-8">
+ <title>Update</title>
+ <center><h1><div class="white-box">Contact List</div></h1></center>
+ <center><h2><div class="white-box2">Update a Contact in the Catalog</div></h2></center>
+</head>
+<div class="sidenav">
+    <a href="../../..">Home</a>
+    <a href="../../../createcontact">Submit a Contact</a>
+</div> 
+<body>
+<br><center><div class="white-box">
+<form method="post">
+ {% csrf_token %}
+ {{ form.as_p }}
+ <input type="submit" value="Submit"/>
+</form>
+</div></center>
+</body>
+</html>
+
